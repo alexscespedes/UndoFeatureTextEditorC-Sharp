@@ -4,6 +4,8 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        var editorAction = new EditorAction(ActionType.Insert, "Hello world", 1);
+
+        Console.WriteLine(editorAction.ToString());
     }
 }
